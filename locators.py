@@ -18,7 +18,7 @@ class Locators:
     INSCRIPTION_BUNS = (By.XPATH, './/span[contains(text(), "Булки")]')
 
     # Раздел булки
-    SECTION_BUNS = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]')
+    SECTION_BUNS = (By.XPATH, '//div/main/section[1]/div[1]/div[1]')
 
     # Кнопка "Личный Кабинет"
     PERSONAL_AREA_BUTTON = (By.XPATH, './/p[contains(text(), "Личный Кабинет")]')
@@ -27,7 +27,7 @@ class Locators:
     INSCRIPTION_SAUSE = (By.XPATH, './/span[contains(text(), "Соусы")]')
 
     # Раздел соусы
-    SECTION_SAUSE = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]')
+    SECTION_SAUSE = (By.XPATH, '//div/main/section[1]/div[1]/div[2]')
 
     # Зарегистрироваться
     INSCRIPTION_LOGIN = (By.CLASS_NAME, "Auth_link__1f0lj")
@@ -36,7 +36,7 @@ class Locators:
     INSCRIPTION_TOPPING = (By.XPATH, './/span[contains(text(), "Начинки")]')
 
     # Раздел с начинками
-    SECTION_TOPPING_ACTIVE = (By.XPATH, '//div[contains(@class, "tab_tab_type_current")]')
+    SECTION_FILLINGS = (By.XPATH, '//div/main/section[1]/div[1]/div[3]')
 
     # Такой пользователь уже существует
     INSCRIPTION_ERROR = (By.XPATH, './/p[contains(text(), "Такой пользователь уже существует")]')

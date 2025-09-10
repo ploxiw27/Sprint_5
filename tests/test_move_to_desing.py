@@ -30,13 +30,13 @@ class TestSectionToppingCheck:
         driver = start_from_login_page
 
         # Клик начинка
-        WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_TOPPING_ACTIVE)).click()
+        WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_FILLINGS)).click()
 
         # Проверка что раздел активный
-        new_element = WebDriverWait(driver, 12).until(EC.presence_of_element_located(Locators.SECTION_TOPPING_ACTIVE))
+        new_element = WebDriverWait(driver, 12).until(EC.presence_of_element_located(Locators.SECTION_FILLINGS))
 
         # Проверка активной вкладки Начинки
-        activ_tab = WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_TOPPING_ACTIVE))
+        activ_tab = WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_FILLINGS))
         assert "Начинки" in activ_tab.text
 
 
@@ -45,7 +45,7 @@ class TestSectionSauceCheck:
         driver = start_from_login_page
 
         # Клик соус
-        WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_TOPPING_ACTIVE)).click()
+        WebDriverWait(driver, 12).until(EC.visibility_of_element_located(Locators.SECTION_FILLINGS)).click()
 
         # Проверка что раздел активный
         new_element = WebDriverWait(driver, 12).until(EC.presence_of_element_located(Locators.SECTION_SAUSE))
